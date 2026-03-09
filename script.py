@@ -3,7 +3,7 @@ from email.mime.text import MIMEText # MIMETtext is a class that represents the 
 from email.mime.multipart import MIMEMultipart # MIMEMultipart is a class that represents the email message itself
 import os
 
-def send_email(workflow_name, repo_name, workflow_run):
+def send_email(workflow_name, repo_name, workflow_run_id):
     # Email details
     sender_email = os.getenv('SENDER_EMAIL')
     sender_password = os.getenv('SENDER_PASSWORD')
